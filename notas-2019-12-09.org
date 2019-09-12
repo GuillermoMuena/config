@@ -1,0 +1,6 @@
+Hoy veremos a polarización mediante fuentes de corriente. Justificamos el por qué de esta metodología:
+En el caso de una polarización en emisor común recordamos que la ganancia dependerá de gm. El gm a su vez, al ser la derivada de Ic respecto de la tensión Vbe, aumentará si aumentamos la corriente ICq. El problema que tenemos en esta situación es que si aumentamos dicha corriente corremos el riesgo de sacar al transistor de su zona lineal, al bajar la tensión entre emisor y colector. La otra solución es aumentar la resistencia de colector para aumentar la  resistencia Rd. El problema es que esto genera exactamente lo mismo que en el caso anterior.
+
+Esto se soluciona poniendo un transistor como carga para que en continua funcione como un generador de corriente, cuya caída de tensión se va a acomodar respecto a lo que requiera el sistema (que en el análisis en continua, el requerimiento será que la tensión garantice la correcta polarización). Y en señal lo que tendremos será una resistencia muy grande en paralelo con la salida, que es lo requeríamos para que la ganancia de salida aumente.
+
+En las topologías vistas hasta 
