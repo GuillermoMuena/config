@@ -3,4 +3,16 @@ En el caso de una polarización en emisor común recordamos que la ganancia depe
 
 Esto se soluciona poniendo un transistor como carga para que en continua funcione como un generador de corriente, cuya caída de tensión se va a acomodar respecto a lo que requiera el sistema (que en el análisis en continua, el requerimiento será que la tensión garantice la correcta polarización). Y en señal lo que tendremos será una resistencia muy grande en paralelo con la salida, que es lo requeríamos para que la ganancia de salida aumente.
 
-En las topologías vistas hasta 
+En las topologías vistas hasta ahora es posible aplicar distintas topologías con otros transistores (al margen del utilizado para amplificar) para poder aumentar las ganancias de los circuitos. 
+
+Características de las fuentes de corriente
+
+Las fuentes de corriente tienen dos parámetros que podemos modificar con nuestros diseños: la tensión mínima de salida y la resistencia de salida. Como nosostros estamos diseñando fuentes reales y no ideales, debemos tener en cuenta que a bajo valor de caída de tensión la fuente no desarrollará corriente en la salida (al igual que a tensiones de salida grandes). El intervalo entre estos dos puntos de tensión se conoce como zona de operación. Debemos diseñar para que esta zona sea lo más grande posible, y lo más lineal posible. 
+Con un único transistor es posible lograr una corriente con estas carácterísticas, pero presenta el problema de que su resistencia de salida es pequeña, y su rango dinámico no es muy amplio. Para solucionar esto, debemos optar por arreglos de transistores en vez de transistores individuales.  
+
+Nomenclatura
+
+La corriente puede imponerse por inyección (fuentes de corriente propiamente dichas) o puede imponerse por requerimiento (sumideros de corriente)
+  
+En los transistores de tecnología MOSFET tenemos que los transistores N cumplen la función de sumideros y los transistores tipo P cumplen la función de fuentes de corriente. 
+  
